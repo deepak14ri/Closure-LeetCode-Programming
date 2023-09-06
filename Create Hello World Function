@@ -1,0 +1,25 @@
+/**
+ * @return {Function}
+ */
+
+/*
+  Example 1:
+    Input: args = []
+    Output: "Hello World"
+    Explanation:
+    const f = createHelloWorld();
+    f(); // "Hello World"
+
+    The function returned by createHelloWorld should always return "Hello World".
+*/
+
+// var createHelloWorld = function() {
+//     return () => "Hello World";
+// };
+
+const createHelloWorld = () => () => "Hello World";
+
+/**
+ * const f = createHelloWorld();
+ * f(); // "Hello World"
+ */
