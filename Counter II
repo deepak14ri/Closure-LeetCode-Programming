@@ -1,0 +1,31 @@
+/**
+ * @param {integer} init
+ * @return { increment: Function, decrement: Function, reset: Function }
+ */
+
+/* Example 1:
+
+    Input: init = 5, calls = ["increment","reset","decrement"]
+    Output: [6,5,4]
+    Explanation:
+    const counter = createCounter(5);
+    counter.increment(); // 6
+    counter.reset(); // 5
+    counter.decrement(); // 4
+
+*/
+const createCounter = (init) => {
+    let presentCounter = init;
+    return {
+        increment: () => ++presentCounter,
+        decrement: () => --presentCounter,
+        reset: () => presentCounter = init,
+    };
+};
+
+/**
+ * const counter = createCounter(5)
+ * counter.increment(); // 6
+ * counter.reset(); // 5
+ * counter.decrement(); // 4
+ */
